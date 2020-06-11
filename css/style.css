@@ -1,0 +1,399 @@
+body {
+    overflow: visible;
+}
+
+@font-face {
+
+    font-family: Roboto-Medium;
+    src: url(../fonts/Roboto-Medium.ttf);
+
+}
+
+html {
+    font-family: Roboto-Medium;
+}
+
+/*header*/
+.quiz_window {
+    max-height: 80%;
+    max-width: 80%;
+    background-color: rgb(2, 167, 218);
+    position: relative;
+    right: -6rem;
+}
+
+.headline {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    position: relative;
+    right: -6rem;
+
+}
+
+.header_content {
+    border: 3px #f5821f solid;
+    border-top-color: #f5821f;
+    border-radius: 15px;
+    background-color: white;
+    max-width: 95%;
+    position: relative;
+    top: -1rem;
+    right: -1.4rem;
+
+}
+
+.letter_btn {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 2px rgb(15, 160, 197) solid;
+    width: 40px;
+    position: relative;
+    left: 12rem;
+    top: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.letter_btn:hover {
+    transition: all 0.3s ease-in-out;
+    color: rgb(17, 179, 219);
+}
+
+.letter_btn:focus,
+.letter_btn:active {
+    outline: none !important;
+    box-shadow: none;
+    background-color: rgb(15, 160, 197);
+    color: white;
+}
+
+.answer_letter {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+.space_letter {
+    border-bottom: 2px black solid;
+
+}
+
+.list_question {
+    font-size: 35px;
+    font-weight: 500;
+    position: relative;
+    left: 1rem;
+}
+
+.hint_images {
+    max-width: 80%;
+    height: 26rem;
+}
+
+/*header*/
+
+/*footer*/
+.page_control {
+    background: #deecf6;
+    max-width: 100%;
+    position: relative;
+    left: 0.95rem;
+}
+
+.refresh_btn {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.showans_btn {
+    background-color: transparent;
+    border: none;
+    width: 0px;
+    height: 0px;
+}
+
+.showans_btn:focus {
+    outline: none;
+    border: none;
+}
+
+.showans_btn:active {
+    outline: none;
+
+}
+
+.correct_icon_checken {
+    font-size: 18px;
+    position: relative;
+    top: -6rem;
+    right: 2rem;
+}
+
+.correct_icon_juice {
+    font-size: 18px;
+    position: relative;
+    top: -6.5rem;
+    right: 15.3rem;
+}
+
+.correct_icon_honey {
+    font-size: 18px;
+    position: relative;
+    top: 2.5rem;
+    right: 16.3rem;
+}
+
+.correct_icon_water {
+    font-size: 18px;
+    position: relative;
+    top: -10.8rem;
+    right: -17rem;
+}
+
+.correct_icon_sand {
+    font-size: 18px;
+    position: relative;
+    top: -2.3rem;
+    right: -6.3rem;
+}
+
+.correct_icon_fruit {
+    font-size: 18px;
+    position: relative;
+    top: -2.7rem;
+    right: -15.7rem;
+}
+
+.check_img {
+    display: none;
+    position: relative;
+    top: -26rem;
+    right: 2rem;
+    height: 47vh;
+}
+
+.correct_img {
+    height: 22px;
+    display: none;
+}
+
+/*end-footer*/
+
+
+
+/*mediaquery*/
+@media only screen and (max-width:479px) {
+    .quiz_window {
+        position: relative;
+        right: 0rem;
+    }
+
+    .headline {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        position: relative;
+        right: -4rem;
+    }
+
+    .header_content {
+        position: relative;
+        top: -1rem;
+        right: 0rem;
+
+    }
+
+    .letter_btn {
+        width: 35px;
+        position: relative;
+        left: 0rem;
+        top: 1rem;
+
+    }
+
+}
+
+
+@media (min-width:768px) and (max-width:989px) {
+    .header_content {
+        position: relative;
+        left: 1rem;
+    }
+
+    .letter_btn {
+        width: 35px;
+        position: relative;
+        left: 4rem;
+        top: 1rem;
+
+    }
+
+    .hint_images {
+        height: 60vh;
+    }
+
+    .list_question {
+        font-size: 25px;
+    }
+
+    .headline {
+        font-size: 20px;
+    }
+
+    .check_img {
+        position: relative;
+        top: -26rem;
+        right: 0rem;
+        height: 38vh !important;
+    }
+
+
+}
+
+@media (min-width:990px) and (max-width:1023px) {
+    .header_content {
+        position: relative;
+        left: 1rem;
+    }
+
+    .letter_btn {
+        width: 35px;
+        position: relative;
+        left: 9rem;
+        top: 1rem;
+
+    }
+
+    .hint_images {
+        height: 60vh;
+    }
+
+    .list_question {
+        font-size: 25px;
+    }
+
+    .headline {
+        font-size: 20px;
+    }
+
+
+
+
+}
+
+@media only screen and (min-width:1024px) and (max-width:1200px) {
+
+    .letter_btn {
+        width: 35px;
+        position: relative;
+        left: 9rem;
+        top: 1rem;
+
+    }
+
+    .hint_images {
+        position: relative;
+        top: -1rem;
+        height: 55vh;
+    }
+
+    .list_question {
+        font-size: 31px;
+    }
+
+    .headline {
+        font-size: 28px;
+    }
+
+    .correct_img {
+        height: 15px;
+        display: none;
+    }
+
+    .check_img {
+        position: relative;
+        top: -26rem;
+        right: 2rem;
+        height: 47vh !important;
+    }
+
+
+}
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+
+    .check_img {
+        position: relative;
+        left: 2rem;
+        height: 45vh !important;
+    }
+
+    .header_content {
+        position: relative;
+        left: 0.7rem;
+    }
+
+    .letter_btn {
+        width: 29px;
+        position: relative;
+        left: 1.8rem;
+        top: 1rem;
+
+    }
+
+    .hint_images {
+        height: 50vh;
+        position: relative;
+        left: 2.5rem;
+    }
+
+    .list_question {
+        font-size: 22px;
+        position: relative;
+        left: 3rem;
+    }
+
+    .headline {
+        font-size: 24px;
+
+
+    }
+
+    .page_control {
+        max-height: 70px;
+    }
+
+    .refresh_btn img {
+        width: 50px;
+
+    }
+
+    .showans_btn {
+        background-color: transparent;
+        border: none;
+        width: 0px;
+        height: 0px;
+    }
+
+    .showans_btn img {
+        width: 50px;
+        position: relative;
+        height: 45px;
+        right: -15rem;
+        top: -4.2rem;
+    }
+
+}
+
+
+@media only screen and (max-width:1400px) {
+    .check_img {
+        display: none;
+        position: relative;
+        top: -26rem;
+        right: 2rem;
+        height: 47vh;
+    }
+
+}

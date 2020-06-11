@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/hover-min.css" />
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link href="css/all.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="mt-5 headline  ">Complete and match.</h2>
+        <div class="quiz_window">
+            <div class="header_content">
+                <div class="row">
+                    <div class="col-12-md" style="height: 100px; ">
+
+                        <button data-letter type="button" id="a" draggable="true" ondragstart="drag(event)"
+                            class="button letter_btn  hvr-push "><span class="answer_letter">a</span> </button>
+                        <button data-letter type="button" id="c" draggable="true" ondragstart="drag(event)"
+                            class="button letter_btn  hvr-push "><span class="answer_letter">c</span> </button>
+                        <button data-letter type="button" id="e" draggable="true" ondragstart="drag(event)"
+                            class="button letter_btn  hvr-push "><span class="answer_letter">e</span> </button>
+                        <button data-letter type="button" id="i" draggable="true" ondragstart="drag(event)"
+                            class="button letter_btn  hvr-push "><span class="answer_letter">i</span> </button>
+                        <button data-letter type="button" id="n" draggable="true" ondragstart="drag(event)"
+                            class="button letter_btn  hvr-push "><span class="answer_letter">n</span> </button>
+                        <button data-letter type="button" id="o" draggable="true" ondragstart="drag(event)"
+                            class="button letter_btn  hvr-push "><span class="answer_letter">o</span> </button>
+                        <button data-letter type="button" id="r" draggable="true" ondragstart="drag(event)"
+                            class="button letter_btn  hvr-push "><span class="answer_letter">r</span> </button>
+                        <button data-letter type="button" id="t" draggable="true" ondragstart="drag(event)"
+                            class="button letter_btn  hvr-push "><span class="answer_letter">t</span> </button>
+                        <button data-letter type="button" id="u" draggable="true" ondragstart="drag(event)"
+                            class="button letter_btn  hvr-push "><span class="answer_letter">u</span> </button>
+                        <button data-letter type="button" id="w" draggable="true" ondragstart="drag(event)"
+                            class="button letter_btn  hvr-push "><span class="answer_letter">w</span> </button>
+                        <button data-letter type="button" id="y" draggable="true" ondragstart="drag(event)"
+                            class="button letter_btn  hvr-push "><span class="answer_letter">y</span> </button>
+                    </div>
+                </div><!-- first_row -->
+                <div class="row">
+                    <div class="col-md-6  " class="complete_words">
+                        <div class="question_words">
+                            <ol class="list_question">
+                                <div class="first_word ">
+                                    <span class="numbers"> 1 &nbsp; &nbsp;</span>
+                                    <span class="com_letter">s</span>
+                                    <span data-show class="space_letter" id="answer_a" ondrop="drop(event)"
+                                        ondragover="allowDrop(event) ">&nbsp;</span>
+                                    <span class="space_letter" id="answer_n" ondrop="drop(event)"
+                                        ondragover="allowDrop(event) ">&nbsp;</span>
+                                    <span class="com_letter">d</span>
+                                    <span class="space_letter" id="answer_w" ondrop="drop(event)"
+                                        ondragover="allowDrop(event) ">&nbsp;</span>
+                                    <span class="space_letter" id="answer_i" ondrop="drop(event)"
+                                        ondragover="allowDrop(event) ">&nbsp;</span>
+                                    <span class="space_letter" id="answer_c" ondrop="drop(event)"
+                                        ondragover="allowDrop(event) ">&nbsp;</span>
+                                    <span class="com_letter">h</span>
+                                    <img src="assets/images/check.svg" class="correct_img" id="correct_icon">
+
+                                </div><!-- first_word -->
+                                <div class="second_word mt-4">
+                                    <span class="numbers"> 2 &nbsp; &nbsp;</span>
+                                    <span class="com_letter">j</span>
+                                    <span class="space_letter" ondrop="drop(event)" ondragover="allowDrop(event) "
+                                        id="answer_u">&nbsp;</span>
+                                    <span class="com_letter">i</span>
+                                    <span class="space_letter" ondrop="drop(event)" ondragover="allowDrop(event) "
+                                        id="answer_c2">&nbsp;</span>
+                                    <span class="com_letter">e</span>
+
+                                </div><!-- second_word -->
+                                <div class="third_word mt-4">
+                                    <span class="numbers"> 3 &nbsp; &nbsp;</span>
+                                    <span class="com_letter">c</span>
+                                    <span class="com_letter">h</span>
+                                    <span class="space_letter" ondrop="drop(event)" ondragover="allowDrop(event) "
+                                        id="answer_e">&nbsp;</span>
+                                    <span class="space_letter" ondrop="drop(event)" ondragover="allowDrop(event) "
+                                        id="answer_c3">&nbsp;</span>
+                                    <span class="com_letter">k</span>
+                                    <span class="space_letter" ondrop="drop(event)" ondragover="allowDrop(event) "
+                                        id="answer_e2">&nbsp;</span>
+                                    <span class="space_letter" ondrop="drop(event)" ondragover="allowDrop(event) "
+                                        id="answer_n2">&nbsp;</span>
+
+
+                                </div><!-- third_word -->
+                                <div class="forth_word mt-4">
+                                    <span class="numbers"> 4 &nbsp; &nbsp;</span>
+                                    <span class="com_letter">h</span>
+                                    <span class="space_letter" ondrop="drop(event)" ondragover="allowDrop(event) "
+                                        id="answer_o">&nbsp;</span>
+                                    <span class="space_letter" ondrop="drop(event)" ondragover="allowDrop(event) "
+                                        id="answer_n3">&nbsp;</span>
+                                    <span class="com_letter">e</span>
+                                    <span class="space_letter" ondrop="drop(event)" ondragover="allowDrop(event) "
+                                        id="answer_y">&nbsp;</span>
+
+                                </div><!-- forth_word -->
+
+                                <div class="fifth_word mt-4">
+                                    <span class="numbers"> 5 &nbsp; &nbsp;</span>
+                                    <span class="com_letter">f</span>
+                                    <span class="space_letter" ondrop="drop(event)" ondragover="allowDrop(event) "
+                                        id="answer_r">&nbsp;</span>
+                                    <span class="space_letter" ondrop="drop(event)" ondragover="allowDrop(event) "
+                                        id="answer_u2">&nbsp;</span>
+                                    <span class="space_letter" ondrop="drop(event)" ondragover="allowDrop(event) "
+                                        id="answer_i2">&nbsp;</span>
+                                    <span class="com_letter">t</span>
+
+                                </div><!-- fifth_word -->
+                                <div class="sixth_word mt-4">
+                                    <span class="numbers"> 6 &nbsp; &nbsp;</span>
+                                    <span class="com_letter">w</span>
+                                    <span class="space_letter" ondrop="drop(event)" ondragover="allowDrop(event) "
+                                        id="answer_a2">&nbsp;</span>
+                                    <span class="space_letter" ondrop="drop(event)" ondragover="allowDrop(event) "
+                                        id="answer_t">&nbsp;</span>
+                                    <span class="com_letter">e</span>
+                                    <span class="space_letter" ondrop="drop(event)" ondragover="allowDrop(event) "
+                                        id="answer_r2">&nbsp;</span>
+
+                                </div><!-- sixth_word -->
+                            </ol>
+                        </div><!-- question_words -->
+                    </div><!-- left-words -->
+                    <div class="col-md-6" style="height: 400px;">
+                        <img src="assets/images/p79ex22q1.png" class="hint_images" id="hide_check">
+                        <img src="assets/images/p79ex22q1edit.png" class="check_img " id="show_check">
+                    </div><!-- right-img -->
+                </div><!-- second_row-->
+
+
+            </div><!-- header -->
+            <div class="footer">
+                <div class="row page_control">
+                    <div class="col-md-6 ">
+                        <a href="index.html" class="refresh_btn "> <img
+                                style="max-height: 60px; margin-top: 10px; margin-bottom: 10px;"
+                                src="assets/images/replay_icon.png" alt=""> </a>
+                    </div> <!-- refresh -->
+                    <div class="col-md-6">
+                        <audio id="show_ans_audio" src="assets/sounds/Correct-answer.mp3"></audio>
+                        <button type="button" onclick="myFunction_1()" id="showAll" class="showans_btn"><img
+                                style="max-height: 60px;  margin-top: 10px; margin-bottom: 10px;"
+                                src="assets/images/showAns_icon.png" alt=""> </button>
+
+                    </div> <!-- show_answers -->
+                </div><!-- row -->
+            </div><!-- footer -->
+        </div><!-- quiz_window -->
+    </div><!-- container -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+<!--  
+<i class="fas fa-check correct_icon_checken" id="show_check"></i>
+<i class="fas fa-check correct_icon_juice" id="show_check"></i>
+<i class="fas fa-check correct_icon_honey" id="show_check"></i>
+<i class="fas fa-check correct_icon_water" id="show_check"></i>
+<i class="fas fa-check correct_icon_sand" id="show_check"></i>
+<i class="fas fa-check correct_icon_fruit" id="show_check"></i>-->
